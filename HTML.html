@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HTML.css">
+    <title>Project 2</title>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">VANTELA</div>
+    <nav class="left-links">
+      <a href="#">Help</a>
+      <a href="#">Store</a>
+    </nav>
+    <nav class="right-links">
+      <span class="icon">💬</span>
+      <span class="icon">❤️</span>
+      <span class="icon">🔔</span>
+      <span class="profile">Hello, Ahmad</span>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <header>
+      <h2 class="breadcrumb">Payment Method &gt; Payment Verification</h2>
+    </header>
+    <main>
+      <form class="shipping-form">
+        <label for="address">Shipping Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address">
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City name">
+        
+        <label for="state">State/Province:</label>
+        <input type="text" id="state" name="state" placeholder="State or Province">
+        
+        <label for="postal-code">Postal Code:</label>
+        <input type="text" id="postal-code" name="postal-code" placeholder="Postal code">
+        
+        <button type="submit" class="btn">Proceed</button>
+      </form>
+      <div class="summary">
+        <h2>Order Summary</h2>
+        <p>Subtotal: Rp 149.995</p>
+        <p>Shipping: Rp 33.000</p>
+        <p>Total: <strong>Rp 182.995</strong></p>
+        <button class="btn">Complete Payment</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

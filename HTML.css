@@ -1,0 +1,158 @@
+/* || RESET STYLING || */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* || VARIABLES || */
+
+:root {
+    /* || FONTS || */
+    --FF: Arial, sans-serif;
+    --FS: 2rem;
+
+     /* || COLOR || */
+     --GRAY: #f1f1f1;
+     --SECOND-GRAY: #f3f3f3;
+     --DEEP-BLUE: #18378f;
+     --RED: #ea1c0f;
+     --GRAY-TEXT: #858585;
+     --YELLOW: #ffb500;
+     --BLUE: #1F3E97;
+     --GREEN: #07892f;
+     --WHITE: #ffffff;
+     --BLACK: rgba(0, 0, 0, 0.1);
+
+}
+
+/* || GENERAL STYLES || */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--GRAY);
+    margin: 0;
+    padding: 0;
+    color: var(--GRAY-TEXT);
+  }
+  
+/* Top bar styles */
+.top-bar {
+    display: flex;
+    justify-content: space-between; /*Space between left and right links */
+    align-items: center; /*Align items vertically */
+    padding: 0.5rem 2rem;
+    background-color: var(--WHITE);
+    border-bottom: 1px solid var(--GRAY-TEXT);
+    color: var(--DEEP-BLUE);
+    position: relative; /* Make the container a positioning context */
+  }
+
+.top-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+  .top-bar .left-links a {
+    margin-right: 1rem;
+    color: var(--GRAY-TEXT);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .left-links a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .top-bar .right-links {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Position the right links absolutely */
+    bottom: -2rem; /* Move the links down */
+    right: 2rem; /* Align them to the right */
+  }
+  
+  .top-bar .right-links .icon {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .top-bar .right-links .profile {
+    font-weight: bold;
+    color: var(--DEEP-BLUE);
+  }
+  
+  /* Logo and container */
+
+  .container {
+    width: 80%;
+    margin: 2rem auto;
+    background: var(--WHITE);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.8rem var(--BLACK);
+    overflow: hidden;
+    padding: 1.5rem;
+  }
+  
+  /* Header and Breadcrumb */
+/* .header {
+  text-align: left;
+  margin-bottom: 1rem;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: var(--DEEP-BLUE);
+    border-bottom: 0.1rem solid var(--DEEP-BLUE);
+  }
+  
+.breadcrumb{
+  font-size: 1.2rem;
+  color: var(--GRAY-TEXT);
+  margin: 0;
+}
+
+/* Form and Buttons */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+  .shipping-form,
+  .summary {
+    margin: 1rem 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid var(--BLACK);
+    border-radius: 0.4rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: var(--DEEP-BLUE);
+    color: var(--WHITE);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background: var(--BLUE);
+  }
+  
